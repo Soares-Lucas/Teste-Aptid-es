@@ -1,0 +1,74 @@
+.navbar-brand {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.0em;
+    color: #EABB45 !important; 
+    text-shadow: 1px 2.5px 1px  black;
+    margin: 0;
+   
+}
+
+.titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: #0d0c0a;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+
+.carousel-item img {
+    max-width: 100%; 
+    height: 70vh; 
+    object-fit: contain; 
+    opacity: 0.1;
+}
+
+h5{
+    margin-bottom: 2rem;
+}
+
+.form-check{
+    
+    margin-bottom: 1rem;
+    }
+    
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70vh;
+    object-fit: contain;
+   
+    
+   
+    @media (max-width: 768px) {
+        top: 0%;
+        bottom: 0; 
+      transform: translateY(0); 
+    }
+  }
+/* Telas médias */
+@media (max-width: 992px) {
+    .carousel-item img {
+      height: 80vh;
+   
+    }
+    .form-check{
+        padding-left: 0.123rem;
+        margin-bottom: 1.5rem;
+        }
+    }
+  
+  /* Telas pequenas */
+  @media (max-width: 768px) {
+    .carousel-item img {
+      height: 70vh;
+    }
+    .form-check{
+        padding-left: 0.123rem;
+        margin-bottom: 1.5rem;
+        }
+    
+  }
+
