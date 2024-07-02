@@ -22,7 +22,49 @@
           <h2 class="titulo" >Bem vindo ao teste Super Turma</h2>
 
         </div>
- 
+        
+         <!-- Botão para abrir o modal -->
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">Preencher Formulário</button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="formModalLabel">Formulário Inicial</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form id="form-inicial">
+                      <div class="mb-3">
+                          <label for="nome" class="form-label">Nome:</label>
+                          <input type="text" class="form-control" id="nome" name="nome" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email:</label>
+                          <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="idade" class="form-label">idade:</label>
+                        <input type="number" class="form-control" id="idade" name="idade" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="telefone" class="form-label">telefone:</label>
+                      <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                  </div>
+
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+        
+       
+      <div id="questionario" style="display: none;">
     
        <div id="carouselExampleDark" class="carousel carousel-dark slide">
       <div class="carousel-indicators" style="margin-bottom: 0.5rem;">
@@ -62,7 +104,8 @@
             </div>
           </div>
         </div>
-      
+      <div id="questionario" style="display: none;">
+        <div class="carousel-inner">
         <div class="carousel-item">
           <img src="..." class="d-block w-100 mx-auto" alt="...">
           <div class="carousel-caption d-md-block">
@@ -309,13 +352,18 @@
    
   </button>
   
+ </div> 
+
+ <div id="botao" style="display: none;">
+   <div class="d-flex justify-content-center align-items-center">
+    <button class="btn btn-outline-primary" id="enviar-btn">Enviar</button>
+  </div>
+
  </div>
- <div class="d-flex justify-content-center align-items-center">
-  <button class="btn btn-outline-primary">Enviar</button>
-</div>
  
   </header> 
 
+    <script src="/teste_aptidoes/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

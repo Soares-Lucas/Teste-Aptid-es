@@ -33,6 +33,23 @@ h5{
     
     margin-bottom: 1rem;
     }
+
+    .form-check-input {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #5b71f0; 
+      box-shadow: 0 0 5px rgba(0, 100, 200, 0.2);
+  }
+  
+  .form-check-input:checked {
+      background-color: #007bff; 
+      border-color: #007bff;
+  }
+  
+  .form-check-input:focus {
+      outline: none;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.75); 
+  }    
     
 .carousel-caption {
     top: 50%;
